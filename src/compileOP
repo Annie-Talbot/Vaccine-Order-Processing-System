@@ -1,0 +1,14 @@
+g++ -I./ -std=c++11 -c date.cpp -o date.o
+g++ -I./ -std=c++11 -c invoice.cpp -o invoice.o
+g++ -I./ -std=c++11 -c customer.cpp -o customer.o
+g++ -I./ -std=c++11 -c exceptions.cpp -o exceptions.o
+g++ -I./ -std=c++11 -c command.cpp -o command.o
+g++ -I./ -std=c++11 -c controller.cpp -o controller.o
+g++ -I./ -std=c++11 -c ordering.cpp -o ordering.o
+
+g++ ordering.o controller.o command.o exceptions.o customer.o invoice.o date.o -o ordering
+
+
+
+
+
